@@ -16,6 +16,7 @@ module.exports = {
       "@static": path.resolve(__dirname, "src/static/index"),
       "@rq": path.resolve(__dirname, "src/rq/index"),
       "@utils": path.resolve(__dirname, "src/utils/index"),
+      "@enums": path.resolve(__dirname, "src/enums/index"),
     },
   },
 };

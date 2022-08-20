@@ -5,7 +5,10 @@ import clsx from "clsx";
 import { User } from "../User/User";
 import { WinnersProps } from "./Winners.props";
 
-export const Winners = ({ users }: WinnersProps): ReactElement => {
+export const Winners = ({
+  users,
+  user: singleUser,
+}: WinnersProps): ReactElement => {
   // local state
   const [isReverse, setIsReverse] = useState<boolean>(false);
   const [filteredUsers, setFilteredUsers] = useState<UserModel[]>(
@@ -32,7 +35,7 @@ export const Winners = ({ users }: WinnersProps): ReactElement => {
           <User
             className={clsx(user.isWinner && "!bg-gray-200")}
             key={user.id}
-            user={user}
+            user={{ ...user, email: singleUser?.email || "" }}
           />
         ))}
       </div>

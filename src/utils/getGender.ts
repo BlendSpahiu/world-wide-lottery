@@ -6,6 +6,4 @@ export const getGender = (gender: GenderEnums | undefined): string => {
   } else {
     return "F";
   }
-
-  return "";
 };

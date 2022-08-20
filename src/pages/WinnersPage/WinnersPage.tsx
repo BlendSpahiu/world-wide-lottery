@@ -5,7 +5,7 @@ import { Winners } from "@organisms";
 
 export const WinnersPage = (): ReactElement => {
   // hooks
-  const { users } = useUsers();
+  const { user, users } = useUsers();
 
-  return <AppLayout content={<Winners users={users || []} />} />;
+  return <AppLayout content={<Winners user={user} users={users || []} />} />;
 };

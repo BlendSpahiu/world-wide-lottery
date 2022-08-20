@@ -15,12 +15,12 @@ export const useGenerateUser = () => {
   const generateRandomNumber = () =>
     setRandomNumber(Math.floor(Math.random() * 100) + 1);
   const handleGenerateUser = () => {
-    generateRandomNumber();
     setIsLoading(true);
     axios
       .get("https://randomuser.me/api?page=%7BpageIndex%7D")
       .then(({ data }) => {
         if (data) {
+          generateRandomNumber();
           addUser({
             id: data.results[0].id.value,
             fullName: `${data.results[0].name.title} ${data.results[0].name.first} ${data.results[0].name.last}`,

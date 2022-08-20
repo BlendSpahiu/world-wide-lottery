@@ -1,4 +1,4 @@
-import { ReactElement, useState, useRef } from "react";
+import { ReactElement, useState } from "react";
 import { User } from "@organisms";
 import { Button } from "@mui/material";
 import { UserModel } from "@interfaces";
@@ -6,6 +6,7 @@ import { SessionPlayersProps } from "./SessionPlayers.props";
 import clsx from "clsx";
 
 export const SessionPlayers = ({
+  user: singleUser,
   users,
 }: SessionPlayersProps): ReactElement => {
   // local state
@@ -34,7 +35,7 @@ export const SessionPlayers = ({
           <User
             key={user.id}
             className={clsx(user.isWinner && "!bg-gray-200")}
-            user={user}
+            user={{ ...user, email: singleUser?.email || "" }}
           />
         ))}
       </div>

@@ -5,7 +5,9 @@ import { useUsers } from "@hooks";
 
 export const SessionPlayersPage = (): ReactElement => {
   // hooks
-  const { users } = useUsers();
+  const { users, user } = useUsers();
 
-  return <AppLayout content={<SessionPlayers users={users || []} />} />;
+  return (
+    <AppLayout content={<SessionPlayers user={user} users={users || []} />} />
+  );
 };
