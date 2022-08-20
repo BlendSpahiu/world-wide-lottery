@@ -13,6 +13,9 @@ module.exports = {
       "@contexts": path.resolve(__dirname, "src/contexts/index"),
       "@validators": path.resolve(__dirname, "src/validators/index"),
       "@hooks": path.resolve(__dirname, "src/hooks/index"),
+      "@static": path.resolve(__dirname, "src/static/index"),
+      "@rq": path.resolve(__dirname, "src/rq/index"),
+      "@utils": path.resolve(__dirname, "src/utils/index"),
     },
   },
 };

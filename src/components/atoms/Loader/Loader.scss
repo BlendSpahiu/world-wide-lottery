@@ -1,0 +1,8 @@
+.loader {
+    @apply left-0 top-0 flex justify-center items-center w-full;
+
+     &-spinner {
+        @apply w-8 h-8 m-0 bg-transparent border-t-2 border-r-2 rounded-full border-solid border-indigo-600 animate-spin;
+     }
+}
+

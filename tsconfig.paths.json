@@ -11,6 +11,9 @@
             "@contexts": ["contexts/index"],
             "@validators": ["validators/index"],
             "@hooks": ["hooks/index"],
+            "@static": ["static/index"],
+            "@rq": ["rq/index"],
+            "@utils": ["utils/index"],
         }
     }
 }
