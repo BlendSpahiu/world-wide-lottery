@@ -29,7 +29,6 @@ export const SessionPlayers = ({
       <Button onClick={handleChangeOrder} variant="contained">
         Change order
       </Button>
-      <Button onClick={excelExport}>Download as Excel sheet</Button>
       <div className="grid grid-cols-3 gap-5">
         {filteredUsers?.map((user) => (
           <User
