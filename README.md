@@ -2,7 +2,7 @@
 
 This app was created with Create React App with integrated typescript. Using craco as a config override which I used mainly for pathname aliases for cleaner imports.
 
-There are a few libraries I used in this project. What I used are:
+There are a few libraries I used in this project:
 
 - UseForm Hook for form handling https://react-hook-form.com/api/useform/
 - TailwindCSS for faster styling https://tailwindcss.com/
